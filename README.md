@@ -1,4 +1,5 @@
 # docker-ubuntu-ssh
+[![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/vikesh001/ubuntu-ssh)
 
 
 This Docker image provides a lightweight Ubuntu-based environment with SSH access enabled. It allows you to securely connect to the containerized environment via SSH. The image is designed to be customizable by allowing you to set a root password and create a non-root user with sudo privileges.
