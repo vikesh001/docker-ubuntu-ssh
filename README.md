@@ -3,7 +3,16 @@
 
 This Docker image provides a lightweight Ubuntu-based environment with SSH access enabled. It allows you to securely connect to the containerized environment via SSH. The image is designed to be customizable by allowing you to set a root password and create a non-root user with sudo privileges.
 
-## Usage:
+## Build the Docker Image
+
+Save the provided Dockerfile and entrypoint.sh scripts in a directory. Let's assume you saved them in a directory named ssh-container.
+
+Navigate to the directory containing the Dockerfile and build the Docker image:
+
+```javascript
+docker build -t ubuntu-ssh .
+```
+## Deploy Container:
 
 ```javascript
 docker run -d -p <host_port>:22 --name <container_name> -e ROOT_PASSWORD=<password> -e USERNAME=<username> ubuntu-ssh
